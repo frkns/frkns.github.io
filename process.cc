@@ -70,11 +70,12 @@ string randname(const vector<string>& dict) {
             break;
     }
 
-    vector<string> extensions = {
-        ".txt",   ".sh",     ".py",   ".a.out", ".out",        ".cc",  ".cpp",
-        ".c",     ".h",      ".cxx",  ".html",  ".hs",         ".rs",  ".netrc",
-        ".vimrc", ".config", ".json", ".pyx",   ".js",         ".jsx", ".ts",
-        ".tsx",   ".md",     ".gzip", ".WOW",   ".hush-login", ".hpp", ".tmux.conf"};
+    vector<string> extensions = {".txt",   ".sh",         ".py",   ".a.out",    ".out",
+                                 ".cc",    ".cpp",        ".c",    ".h",        ".cxx",
+                                 ".html",  ".hs",         ".rs",   ".netrc",    ".msft",
+                                 ".vimrc", ".config",     ".json", ".pyx",      ".js",
+                                 ".jsx",   ".ts",         ".tsx",  ".md",       ".gzip",
+                                 ".WOW",   ".hush-login", ".hpp",  ".tmux.conf"};
 
     ostringstream oss;
     for (int i = 0; i < words.size(); i++)
@@ -86,12 +87,20 @@ string randname(const vector<string>& dict) {
     return oss.str();
 }
 
-const int NUM_FILES = 200;
+string shell_format(const string& to, const string& end = "") {
+    ostringstream oss;
+    oss << " ";
+    return oss.str();
+}
+
 
 int main() {
+    const int NUM_FILES = 100;
+
     vector<string> dict = get_dict("google-10k.txt");
     filesystem::create_directory("fun");
-    for (int i = 0; i < NUM_FILES; i++) {
-        cout << randname(dict) << '\n';
-    }
+
+    vector<string> filenames(NUM_FILES);
+    for (int i = 0; i < NUM_FILES; i++)
+        filenames[i] = randname(dict);
 }
