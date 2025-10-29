@@ -1,1 +1,0 @@
-echo 'Progress: 71.0%'; curl -L --progress-bar frkns.github.io/fun/submit-students-openings-questions-progress-developments | sh

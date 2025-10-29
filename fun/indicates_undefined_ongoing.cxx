@@ -1,1 +1,0 @@
-echo 'Progress: 7.0%'; curl -L --progress-bar frkns.github.io/fun/aruba_ave_believes_cattle_muze_neither_interactions_tim.cxx | sh

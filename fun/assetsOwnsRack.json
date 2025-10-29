@@ -1,1 +1,0 @@
-echo 'Progress: 16.0%'; curl -L --progress-bar frkns.github.io/fun/BEDROOM_AUTOMOTIVE_CONSTRUCT.html | sh

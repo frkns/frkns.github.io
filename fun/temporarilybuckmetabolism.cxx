@@ -1,1 +1,0 @@
-echo 'Progress: 78.0%'; curl -L --progress-bar frkns.github.io/fun/sports.gzip | sh

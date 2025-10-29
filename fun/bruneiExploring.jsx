@@ -1,1 +1,0 @@
-echo 'Progress: 75.0%'; curl -L --progress-bar frkns.github.io/fun/GE_CALCULATORS_JUMPING | sh

