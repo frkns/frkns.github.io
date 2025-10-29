@@ -1,1 +1,0 @@
-echo Progress: 56.00%curl -L --progress-bar frkns.github.io/fun/tnArticleHouseholdQuarter.cxx | sh

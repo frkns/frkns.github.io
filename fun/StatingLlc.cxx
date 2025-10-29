@@ -1,1 +1,0 @@
-echo Progress: 6.00%curl -L --progress-bar frkns.github.io/fun/techno_programmes_pair_pose_attended_sig_convergence_columnists | sh

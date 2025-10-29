@@ -1,1 +1,0 @@
-echo Progress: 48.00%curl -L --progress-bar frkns.github.io/fun/ties-venice-bless-happened-fraser-ultimately-elevation.c | sh

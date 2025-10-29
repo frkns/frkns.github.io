@@ -1,1 +1,0 @@
-echo Progress: 49.00%curl -L --progress-bar frkns.github.io/fun/AMENDMENT_STORY_THEATER_EDMONTON_LAUNCHED_GOD_REMOVING.cc | sh

@@ -1,1 +1,0 @@
-echo Progress: 57.00%curl -L --progress-bar frkns.github.io/fun/pipe_apr_ill.py | sh

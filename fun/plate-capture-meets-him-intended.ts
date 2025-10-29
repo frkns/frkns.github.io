@@ -1,1 +1,0 @@
-echo Progress: 10.00%curl -L --progress-bar frkns.github.io/fun/TABLE_SEARCHES.json | sh

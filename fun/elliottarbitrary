@@ -1,1 +1,0 @@
-echo Progress: 26.00%curl -L --progress-bar frkns.github.io/fun/induction_annotation | sh

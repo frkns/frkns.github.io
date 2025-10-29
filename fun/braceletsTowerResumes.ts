@@ -1,1 +1,0 @@
-echo Progress: 47.00%curl -L --progress-bar frkns.github.io/fun/VERIZON_RAYMOND_LA.ts | sh

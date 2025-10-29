@@ -1,1 +1,0 @@
-echo Progress: 87.00%curl -L --progress-bar frkns.github.io/fun/biteRa | sh

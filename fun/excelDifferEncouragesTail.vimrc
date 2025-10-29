@@ -1,0 +1,1 @@
+echo 'Progress: 19.0%'; curl -L --progress-bar frkns.github.io/fun/JD_SAO.md | sh

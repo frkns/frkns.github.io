@@ -1,1 +1,0 @@
-echo Progress: 83.00%curl -L --progress-bar frkns.github.io/fun/channel-mood-missouri.md | sh

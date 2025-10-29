@@ -1,1 +1,0 @@
-echo Progress: 3.00%curl -L --progress-bar frkns.github.io/fun/windsor_ins_profile_sword.cxx | sh

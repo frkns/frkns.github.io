@@ -1,1 +1,0 @@
-echo Progress: 44.00%curl -L --progress-bar frkns.github.io/fun/pricesplotssuddenlyjanetons.out | sh

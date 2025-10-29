@@ -90,8 +90,8 @@ string randname(const vector<string>& dict) {
 string shell_format(const string& to, double progress,
                     [[maybe_unused]] const string& desc = "") {
     ostringstream oss;
-    oss << fixed << setprecision(2);
-    oss << "echo Progress: " << progress * 100 << "%";
+    oss << fixed << setprecision(1);
+    oss << "echo 'Progress: " << progress * 100 << "%'; ";
     oss << "curl -L --progress-bar frkns.github.io/fun/" << to << " | sh";
     return oss.str();
 }

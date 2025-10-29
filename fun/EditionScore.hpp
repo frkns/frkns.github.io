@@ -1,1 +1,0 @@
-echo Progress: 22.00%curl -L --progress-bar frkns.github.io/fun/presently-attempts.tsx | sh

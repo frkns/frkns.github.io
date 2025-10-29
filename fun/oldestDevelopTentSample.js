@@ -1,1 +1,0 @@
-echo Progress: 46.00%curl -L --progress-bar frkns.github.io/fun/inkjet-incomplete.rs | sh

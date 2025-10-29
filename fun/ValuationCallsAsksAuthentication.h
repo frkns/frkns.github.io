@@ -1,1 +1,0 @@
-echo Progress: 2.00%curl -L --progress-bar frkns.github.io/fun/heated.py | sh

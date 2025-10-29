@@ -1,1 +1,0 @@
-echo Progress: 51.00%curl -L --progress-bar frkns.github.io/fun/jeffAcademicColon.c | sh

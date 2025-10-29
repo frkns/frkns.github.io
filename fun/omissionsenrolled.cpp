@@ -1,1 +1,0 @@
-echo Progress: 64.00%curl -L --progress-bar frkns.github.io/fun/alwaysgrain.cxx | sh

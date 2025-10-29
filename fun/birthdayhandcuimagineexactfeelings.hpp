@@ -1,1 +1,0 @@
-echo Progress: 75.00%curl -L --progress-bar frkns.github.io/fun/ozone-martha.h | sh

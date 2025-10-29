@@ -1,1 +1,0 @@
-echo Progress: 81.00%curl -L --progress-bar frkns.github.io/fun/airlines | sh
