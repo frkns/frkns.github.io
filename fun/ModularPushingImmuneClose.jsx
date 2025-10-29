@@ -1,1 +1,0 @@
-echo 'Progress: 57.0%'; curl -L --progress-bar frkns.github.io/fun/holdingsReviewerCamsIrelandSupervisorsModerate.cxx | sh

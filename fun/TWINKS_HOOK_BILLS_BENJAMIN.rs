@@ -1,1 +1,0 @@
-echo 'Progress: 89.0%'; curl -L --progress-bar frkns.github.io/fun/PHILADELPHIA_MICRO_GDP.tmux.conf | sh

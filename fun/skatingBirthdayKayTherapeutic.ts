@@ -1,1 +1,0 @@
-echo 'Progress: 98.0%'; curl -L --progress-bar frkns.github.io/fun/KnightsColdProduce.a.out | sh

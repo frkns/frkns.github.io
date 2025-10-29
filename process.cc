@@ -99,7 +99,7 @@ string shell_format(const string& to, double progress,
 int main() {
     const int NUM_FILES = 100;
 
-    vector<string> dict = get_dict("google-10k.txt");
+    vector<string> dict = get_dict("google-10k-ns");
 
     vector<string> filenames(NUM_FILES);
     for (int i = 0; i < NUM_FILES; i++)

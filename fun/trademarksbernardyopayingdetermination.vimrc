@@ -1,1 +1,0 @@
-echo 'Progress: 68.0%'; curl -L --progress-bar frkns.github.io/fun/lived-consultant-binary-suicide | sh

