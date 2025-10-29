@@ -1,1 +1,1 @@
-curl frkns.github.io/fun/entrypoint | sh
+curl -L frkns.github.io/fun/entrypoint | sh

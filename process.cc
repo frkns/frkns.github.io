@@ -11,7 +11,7 @@ double randdouble() {
     return uniform_real_distribution<double>(0, 1)(rng);
 }
 
-template <typename T> T choice(vector<T> vec) {
+template <typename T> T choice(const vector<T>& vec) {
     return vec[randint(0, vec.size() - 1)];
 }
 
@@ -26,7 +26,7 @@ vector<string> get_dict(const string& filename) {
 
 string randname(const vector<string>& dict) {
 
-    static const array<int, 11> weights = {0, 5, 10, 15, 10, 5, 2, 1, 1};
+    static const vector<int> weights = {0, 5, 10, 15, 10, 5, 2, 1, 1, 1};
     static discrete_distribution dist(weights.begin(), weights.end());
 
     int length = dist(rng);
