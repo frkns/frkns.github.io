@@ -1,0 +1,1 @@
+echo Progress: 18.00%curl -L --progress-bar frkns.github.io/fun/vsnet-mate-convergence-shaw.h | sh

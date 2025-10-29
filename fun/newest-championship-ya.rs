@@ -1,1 +1,0 @@
-curl -L --progress-bar frkns.github.io/fun/trees-wood-cock-riverside-broadway.config | sh

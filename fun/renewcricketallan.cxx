@@ -1,1 +1,0 @@
-curl -L --progress-bar frkns.github.io/fun/words-cents-ac-united.hs | sh

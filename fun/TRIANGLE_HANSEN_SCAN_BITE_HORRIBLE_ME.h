@@ -1,1 +1,0 @@
-curl -L --progress-bar frkns.github.io/fun/locator_sandy_criminal_expression_limitation_ears_mpegs.out | sh

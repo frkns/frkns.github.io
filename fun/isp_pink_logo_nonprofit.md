@@ -1,1 +1,0 @@
-curl -L --progress-bar frkns.github.io/fun/acquire_distance_lowest.jsx | sh

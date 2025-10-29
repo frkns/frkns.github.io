@@ -1,0 +1,1 @@
+echo Progress: 1.00%curl -L --progress-bar frkns.github.io/fun/TABLETS_SINGLES_DIAMOND.config | sh

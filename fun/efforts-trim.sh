@@ -1,0 +1,1 @@
+echo Progress: 40.00%curl -L --progress-bar frkns.github.io/fun/connected-wrist.html | sh

