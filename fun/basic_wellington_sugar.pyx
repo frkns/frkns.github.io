@@ -1,0 +1,1 @@
+curl -L --progress-bar frkns.github.io/fun/florists_miracle_gross_airport | sh

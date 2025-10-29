@@ -1,0 +1,1 @@
+curl -L --progress-bar frkns.github.io/fun/TRIANGLE_HANSEN_SCAN_BITE_HORRIBLE_ME.h | sh

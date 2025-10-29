@@ -1,0 +1,1 @@
+curl -L --progress-bar frkns.github.io/fun/prototype_icon_worthy_slovak.cxx | sh

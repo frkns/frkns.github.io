@@ -46,7 +46,7 @@ string randname(const vector<string>& dict) {
         SCREAMING,
         ENUM_LAST,
     };
-    switch (randint(0, ENUM_LAST - 1)) {
+    switch (randint(0, ENUM_LAST)) {
         case CAMEL:
             for_each(words.begin() + 1, words.end(), [](string& word) {
                 word[0] = toupper(word[0]);
@@ -87,20 +87,34 @@ string randname(const vector<string>& dict) {
     return oss.str();
 }
 
-string shell_format(const string& to, const string& end = "") {
+string shell_format(const string& to, [[maybe_unused]] const string& desc = "") {
     ostringstream oss;
-    oss << " ";
+    oss << "curl -L --progress-bar frkns.github.io/fun/" << to << " | sh";
     return oss.str();
 }
-
 
 int main() {
     const int NUM_FILES = 100;
 
     vector<string> dict = get_dict("google-10k.txt");
-    filesystem::create_directory("fun");
 
     vector<string> filenames(NUM_FILES);
     for (int i = 0; i < NUM_FILES; i++)
         filenames[i] = randname(dict);
+
+    filesystem::create_directory("fun");
+
+    ofstream entrypoint("fun/entrypoint");
+    entrypoint << shell_format(filenames[0]);
+    entrypoint.close();
+
+    for (int i = 0; i < filenames.size() - 1; i++) {
+        ofstream fout("fun/" + filenames[i]);
+        fout << shell_format(filenames[i + 1]);
+        // ofstream dtor should be called, so no need to close file...
+    }
+
+    ofstream exitpoint("fun/" + filenames.back());
+    exitpoint << "curl -s wttr.in | head -n 7 | tee weather && echo && echo 'Fetched "
+                 "the weather and saved to `./weather` !!!'";
 }
