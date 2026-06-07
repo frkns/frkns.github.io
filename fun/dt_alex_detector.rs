@@ -1,1 +1,0 @@
-echo 'Progress: 15.0%'; curl -L --progress-bar frkns.github.io/fun/NEWCASTLE_REMOTE_MODEMS_DENSITY_REGRESSION_EDEN.jsx | sh

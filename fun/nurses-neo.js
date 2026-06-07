@@ -1,1 +1,0 @@
-echo 'Progress: 38.0%'; curl -L --progress-bar frkns.github.io/fun/juan-commissioner-tutorial.h | sh

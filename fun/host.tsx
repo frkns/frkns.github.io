@@ -1,1 +1,0 @@
-curl -s wttr.in | head -n 7 | tee weather && echo && echo 'Fetched the weather and saved to `./weather` !!!'

