@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Auto-stamp `last_modified_at` into any blog post being committed, so the
+# "last edited" date updates itself. Installed via: git config core.hooksPath .githooks
+set -euo pipefail
+
+today="$(date +%F)"
+
+# Staged posts that were added/copied/modified (skip deletions/renames-away).
+changed="$(git diff --cached --name-only --diff-filter=ACM -- _posts/ || true)"
+[ -z "$changed" ] && exit 0
+
+while IFS= read -r f; do
+  [ -n "$f" ] || continue
+  case "$f" in *.md|*.markdown) ;; *) continue ;; esac
+  [ -f "$f" ] || continue
+  head -n1 "$f" | grep -q '^---' || continue          # needs YAML front matter
+
+  if grep -q '^last_modified_at:' "$f"; then
+    sed -i "s/^last_modified_at:.*/last_modified_at: $today/" "$f"
+  else
+    sed -i "0,/^---$/s/^---$/---\nlast_modified_at: $today/" "$f"
+  fi
+  git add "$f"
+done <<< "$changed"

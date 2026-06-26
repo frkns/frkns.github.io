@@ -5,7 +5,8 @@ layout: default
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    &mdash; <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+    {%- assign d = post.last_modified_at | default: post.date -%}
+    &mdash; <time datetime="{{ d | date_to_xmlschema }}">{{ d | date: "%Y-%m-%d" }}</time>
   </li>
   {% endfor %}
 </ul>
