@@ -4,6 +4,6 @@ layout: default
 <article>
   <h1>{{ page.title }}</h1>
   {%- assign shown_date = page.last_modified_at | default: page.date -%}
-  <p><time datetime="{{ shown_date | date_to_xmlschema }}">{{ shown_date | date: "%Y-%m-%d" }}</time></p>
+  <p>Last edited: <time datetime="{{ shown_date | date_to_xmlschema }}">{{ shown_date | date: "%Y-%m-%d" }}</time></p>
   {{ content }}
 </article>
