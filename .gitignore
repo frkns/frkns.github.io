@@ -1,0 +1,10 @@
+AGENTS.md
+CLAUDE.md
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+Gemfile.lock

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
+  <style>
+    body { font-family: sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    pre { overflow-x: auto; }
+  </style>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+  <header>
+    {%- if page.url == '/' -%}
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    {%- else -%}
+      <a href="{{ '/' | relative_url }}">&larr; go back</a>
+    {%- endif -%}
+  </header>
+  {{ content }}
+</body>
+</html>

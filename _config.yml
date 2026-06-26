@@ -1,0 +1,24 @@
+title: Kenny Chau's Page
+description: personal site
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# blog posts live at /blog/<slug>/
+permalink: /blog/:title/
+
+# no theme - keep it minimal (overrides GitHub Pages' default Primer theme)
+theme:
+
+# keep tooling/agent files out of the published site
+# (must also re-list the local-gem dirs, since this replaces Jekyll's defaults)
+exclude:
+  - run.sh
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - AGENTS.md
+  - CLAUDE.md
+  - vendor
+  - .bundle
