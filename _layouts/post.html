@@ -7,3 +7,12 @@ layout: default
   <p>Last edited: <time datetime="{{ shown_date | date_to_xmlschema }}">{{ shown_date | date: "%Y-%m-%d" }}</time></p>
   {{ content }}
 </article>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>

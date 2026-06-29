@@ -5,8 +5,17 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+# projects aren't prose - skip auto-excerpt generation (avoids a build warning)
+excerpt_separator: ""
+
 # blog posts live at /blog/<slug>/
 permalink: /blog/:title/
+
+# static-website projects live at /projects/<slug>/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 # no theme - keep it minimal (overrides GitHub Pages' default Primer theme)
 theme:
@@ -20,3 +29,5 @@ exclude:
   - README.md
   - vendor
   - .bundle
+  - AGENTS.md
+  - CLAUDE.md

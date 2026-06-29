@@ -1,12 +1,26 @@
 ---
 layout: default
 ---
+<h3>Writing</h3>
 <ul>
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    {%- assign d = post.last_modified_at | default: post.date -%}
+    {%- assign d = post.last_modified_at | default: post.date %}
     &mdash; <time datetime="{{ d | date_to_xmlschema }}">{{ d | date: "%Y-%m-%d" }}</time>
   </li>
   {% endfor %}
 </ul>
+
+{% if site.projects.size > 0 %}
+<h3>Random Things Hosted Here</h3>
+<ul>
+  {% assign projects = site.projects | sort: 'added' | reverse %}
+  {% for project in projects %}
+  <li>
+    <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    {%- if project.description %}<br><small>{{ project.description }}</small>{% endif -%}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

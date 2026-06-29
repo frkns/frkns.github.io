@@ -1,0 +1,222 @@
+---
+layout: project
+title: Stopwatch That Lets You Set Initial Time
+added: 2026-06-29
+---
+{% raw %}
+<style>
+  #sw-display { font-size: 2.5rem; font-variant-numeric: tabular-nums; }
+  #sw-error { color: #c00; }
+</style>
+
+<p id="sw-display" role="timer" aria-label="Elapsed time" aria-live="off">00:00:00.00</p>
+
+<p>
+  <button id="sw-toggle" type="button">Start</button>
+  <button id="sw-reset" type="button">Reset To Zero</button>
+</p>
+
+<form id="sw-set-form">
+  <label for="sw-initial">Initial time</label>
+  <input id="sw-initial" type="text" placeholder="HH:MM:SS" autocomplete="off" aria-describedby="sw-error">
+  <button type="submit">Set</button>
+</form>
+<p id="sw-error" role="alert"></p>
+
+<script>
+(function () {
+  var KEY = 'stopwatch-set-initial-time';
+  var display = document.getElementById('sw-display');
+  var toggleBtn = document.getElementById('sw-toggle');
+  var resetBtn = document.getElementById('sw-reset');
+  var form = document.getElementById('sw-set-form');
+  var initialInput = document.getElementById('sw-initial');
+  var errorEl = document.getElementById('sw-error');
+
+  // Elapsed time is derived from wall-clock timestamps (Date.now), never from
+  // accumulated interval ticks, so a throttled or suspended background tab can
+  // never drift -- the display just re-syncs to real time whenever it next runs.
+  // A monotonic clock (performance.now) guards the live segment against backward
+  // system-clock steps, while Date.now still captures real time spent asleep.
+  var state = { initialMs: 0, accumulatedMs: 0, running: false, startedAt: 0 };
+  var startedAtPerf = null; // in-memory monotonic anchor for the current run
+
+  function monoNow() {
+    return (window.performance && performance.now) ? performance.now() : Date.now();
+  }
+
+  // Re-anchor the monotonic clock to however much wall-clock time the current run
+  // has already accrued (covers fresh loads, reloads, and returning to the tab).
+  function reanchor() {
+    if (state.running) {
+      var wall = Date.now() - state.startedAt;
+      startedAtPerf = monoNow() - (wall > 0 ? wall : 0);
+    } else {
+      startedAtPerf = null;
+    }
+  }
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (raw) {
+        var s = JSON.parse(raw);
+        if (s && typeof s === 'object') {
+          state.initialMs = Number(s.initialMs) || 0;
+          state.accumulatedMs = Number(s.accumulatedMs) || 0;
+          state.running = !!s.running;
+          state.startedAt = Number(s.startedAt) || 0;
+          if (state.running && !state.startedAt) state.running = false;
+        }
+      }
+    } catch (e) { /* ignore corrupt or unavailable storage */ }
+    reanchor();
+  }
+
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+  }
+
+  function liveSegmentMs() {
+    if (!state.running) return 0;
+    var wall = Date.now() - state.startedAt;
+    var seg = (startedAtPerf == null) ? wall : Math.max(monoNow() - startedAtPerf, wall);
+    return seg > 0 ? seg : 0;
+  }
+
+  function elapsedMs() {
+    var e = state.initialMs + state.accumulatedMs + liveSegmentMs();
+    return e > 0 ? e : 0;
+  }
+
+  function p2(n) { return (n < 10 ? '0' : '') + n; }
+
+  function fmt(ms) {
+    var totalCs = Math.floor(ms / 10);
+    var cs = totalCs % 100;
+    var totalSec = Math.floor(totalCs / 100);
+    var s = totalSec % 60;
+    var m = Math.floor(totalSec / 60) % 60;
+    var h = Math.floor(totalSec / 3600);
+    return p2(h) + ':' + p2(m) + ':' + p2(s) + '.' + p2(cs);
+  }
+
+  function render() {
+    display.textContent = fmt(elapsedMs());
+    toggleBtn.textContent = state.running ? 'Stop' : 'Start';
+  }
+
+  function start() {
+    if (state.running) return;
+    state.running = true;
+    state.startedAt = Date.now();
+    startedAtPerf = monoNow();
+    save(); render();
+  }
+
+  function stop() {
+    if (!state.running) return;
+    state.accumulatedMs += liveSegmentMs();
+    state.running = false;
+    state.startedAt = 0;
+    startedAtPerf = null;
+    save(); render();
+  }
+
+  function toggle() { if (state.running) stop(); else start(); }
+
+  // Stop the watch and discard the current run, keeping the initial-time offset.
+  function clearRun() {
+    state.accumulatedMs = 0;
+    state.running = false;
+    state.startedAt = 0;
+    startedAtPerf = null;
+    save(); render();
+  }
+
+  // Reset To Zero: also drop the initial-time offset so the display reads 0.
+  function resetToZero() {
+    state.initialMs = 0;
+    initialInput.value = '';
+    setError('');
+    clearRun();
+  }
+
+  // Accepts "HH:MM:SS", "MM:SS", "SS" (rightmost field is always seconds);
+  // fractional seconds allowed. Returns milliseconds, or null if unparseable.
+  function parseInitial(str) {
+    str = (str || '').trim();
+    if (!str) return 0;
+    var parts = str.split(':');
+    if (parts.length > 3) return null;
+    var weights = [1, 60, 3600];
+    var totalSec = 0;
+    for (var i = 0; i < parts.length; i++) {
+      var token = parts[i].trim() || '0';
+      if (token === '.' || !/^\d*\.?\d*$/.test(token)) return null;
+      var val = parseFloat(token);
+      if (isNaN(val)) return null;
+      totalSec += val * weights[parts.length - 1 - i];
+    }
+    if (totalSec < 0) return null;
+    return Math.round(totalSec * 1000);
+  }
+
+  function setError(msg) {
+    errorEl.textContent = msg || '';
+    if (msg) initialInput.setAttribute('aria-invalid', 'true');
+    else initialInput.removeAttribute('aria-invalid');
+  }
+
+  // The interval only refreshes the display; correctness comes from elapsedMs().
+  setInterval(function () { if (state.running) render(); }, 41);
+
+  // Re-sync on returning to the tab, on bfcache restore, and when another tab
+  // changes the shared state.
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) { load(); render(); }
+  });
+  window.addEventListener('pageshow', function () { load(); render(); });
+  window.addEventListener('storage', function (ev) {
+    if (ev.key === KEY) { load(); render(); }
+  });
+
+  toggleBtn.addEventListener('click', toggle);
+  resetBtn.addEventListener('click', resetToZero);
+
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var ms = parseInitial(initialInput.value);
+    if (ms === null) {
+      setError('Enter a time like HH:MM:SS, MM:SS, or seconds.');
+      initialInput.focus(); initialInput.select();
+      return;
+    }
+    setError('');
+    state.initialMs = ms;
+    clearRun();
+    initialInput.value = ms > 0 ? fmt(ms) : '';
+  });
+
+  initialInput.addEventListener('input', function () { setError(''); });
+
+  // Space toggles start/stop, but only when no control or field is focused, so it
+  // never steals Space from the buttons or the input; the repeat guard stops a
+  // held key from rapidly flipping the state.
+  document.addEventListener('keydown', function (ev) {
+    if (ev.code !== 'Space') return;
+    var el = document.activeElement;
+    if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' ||
+               el.tagName === 'BUTTON' || el.tagName === 'A' ||
+               el.tagName === 'SELECT' || el.isContentEditable)) return;
+    ev.preventDefault();
+    if (ev.repeat) return;
+    toggle();
+  });
+
+  load();
+  if (state.initialMs > 0) initialInput.value = fmt(state.initialMs);
+  render();
+})();
+</script>
+{% endraw %}
