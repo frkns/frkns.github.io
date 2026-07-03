@@ -11,11 +11,11 @@ excerpt_separator: ""
 # blog posts live at /blog/<slug>/
 permalink: /blog/:title/
 
-# static-website projects live at /projects/<slug>/
+# static "random" pages live at /random/<slug>/
 collections:
-  projects:
+  random:
     output: true
-    permalink: /projects/:path/
+    permalink: /random/:path/
 
 # no theme - keep it minimal (overrides GitHub Pages' default Primer theme)
 theme:

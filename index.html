@@ -1,6 +1,14 @@
 ---
 layout: default
 ---
+<p>
+I currently study Data Science & Mathematics at the University of Calgary. 
+<BR>
+I hope to sometimes post things I find interesting here, although I'm known to be somewhat inconsistent.
+</p>
+
+<BR>
+
 <h3>Writing</h3>
 <ul>
   {% for post in site.posts %}
@@ -12,15 +20,25 @@ layout: default
   {% endfor %}
 </ul>
 
-{% if site.projects.size > 0 %}
-<h3>Random Things Hosted Here</h3>
+<BR>
+
+<h3>Random Static Sites Hosted Here</h3>
 <ul>
-  {% assign projects = site.projects | sort: 'added' | reverse %}
+  {% assign projects = site.random | sort: 'added' | reverse %}
   {% for project in projects %}
   <li>
     <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
     {%- if project.description %}<br><small>{{ project.description }}</small>{% endif -%}
   </li>
   {% endfor %}
+  <li><a href="https://frkns.github.io/HydraGame/">Kirby-Paris Hydra Game</a></li>
+  <li>For other projects that aren't web-hosted, see my <a href="https://github.com/frkns">GitHub</a>.</li>
 </ul>
-{% endif %}
+
+<BR>
+<BR>
+If you got this far, don't hesitate to message me and say hi!
+<BR>
+email <code>kenny.chau at ucalgary.ca</code>
+<BR>
+discord <code>osteo9</code>
